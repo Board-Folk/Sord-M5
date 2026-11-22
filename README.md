@@ -86,7 +86,7 @@ May add to this in time
 
 Any decoupling caps at the bottom of either of the mainboards marked not-fitted aren't fitted on the original boards due to the RF shield. Similarly, a metal bar runs along the base of the original keyboard which prevents many of the lower chips being fitted in sockets.
 
-## Gate array
+## Gate Array
 
 The original GA015 gate, a DIP-40 package is near impossible to get hold of, so a replica was needed. Jens Restemeier (@jensrestemeier) recreated the logic, and there are two versions.
 
@@ -144,15 +144,15 @@ Joypad board for the Sord M5 to fit a NES-004E case.
 
 ## Misc
 
-## BFHB001 v0
+### BFHB001 v0
 
 A throughhole approximation of the HB001.
 
-## BFHB001 v1
+### BFHB001 v1
 
 A smaller SMD approximation of the HB001.
 
-## M5TMS9929Adapter
+### M5TMS9929Adapter
 
 An experimental PAL Adapter to allow the use of a TMS9929 on the M5C-01 NTSC board for PAL colour output. It provides the CPU clock and PAL colour encoding. The PAL circuit is based on that found in the PAL SVI-728 using the TBA520 chip. It's difficult to tweak, but it does work, so it's been uploaded. Not needed for, and not compatible with M5C-02.
 

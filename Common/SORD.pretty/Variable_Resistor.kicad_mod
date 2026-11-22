@@ -1,0 +1,217 @@
+(footprint "Variable_Resistor"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Potentiometer, vertical, Bourns 3386F, https://www.bourns.com/pdfs/3386.pdf")
+	(tags "Potentiometer vertical Bourns 3386F")
+	(property "Reference" "REF**"
+		(at -4.4 -3.15 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "317c6d7c-6254-44fe-810b-47225cc617ac")
+		(effects
+			(font
+				(size 1.4 1.5)
+				(thickness 0.2)
+			)
+		)
+	)
+	(property "Value" "Variable_Resistor"
+		(at 2.655 3.475 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "848b19d8-0209-45c6-9c9b-cfdda44550b3")
+		(effects
+			(font
+				(size 1.4 1.5)
+				(thickness 0.2)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8c73f820-641a-4718-be90-3ae2b6dad171")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "95f1ba9e-743c-42fc-a72b-49fe5db46ab8")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "potentiometer/THT"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e2ae4c58-c2c6-4ee4-9b43-04d644c40653")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -3 -6.05)
+		(end -3 0.55)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c7aa6fb8-47ab-4847-b4a5-772f1e10be35")
+	)
+	(fp_line
+		(start -3 0.55)
+		(end -1.35 0.55)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1aa338e5-33d7-4b0f-b2d3-099f7c4f5799")
+	)
+	(fp_line
+		(start -1.35 -6.05)
+		(end -3 -6.05)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "06e6cca4-ba86-4858-a080-6d513f2b6c2f")
+	)
+	(fp_line
+		(start 3.425 -6.05)
+		(end 1.45 -6.05)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b21ccbee-21a5-42f1-b79d-dd98c88524ab")
+	)
+	(fp_line
+		(start 3.425 -4.15)
+		(end 3.425 -6.05)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "916e7c2a-8a19-467f-b30d-64996b4dc5e1")
+	)
+	(fp_line
+		(start 3.425 0.55)
+		(end 1.45 0.55)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b2523e95-013e-4d98-b8b7-51daede47a71")
+	)
+	(fp_line
+		(start 3.425 0.55)
+		(end 3.425 -1.35)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2df1cd45-2335-404f-9c9c-456a39078fdb")
+	)
+	(fp_line
+		(start 0.606 -3.74)
+		(end -1.59 -1.544)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0b68b720-859c-4323-b2ea-d87680168b80")
+	)
+	(fp_line
+		(start 0.798 -3.548)
+		(end -1.398 -1.352)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9c3b319c-6780-49e0-a153-f152b4ad7e69")
+	)
+	(fp_circle
+		(center -0.396 -2.546)
+		(end 1.179 -2.546)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "3b83a0aa-0fcd-4212-9d17-6f1b4fb671de")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -1.11 -2.54 90)
+		(layer "F.Fab")
+		(uuid "14d2017d-d5a4-42e7-b7e2-d067fb10886c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 2 2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "706b177c-0019-4bfa-b1ec-1c476d8235c2")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 -2.54)
+		(size 2 2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e50da99f-4798-4ac7-9ba6-222ae4e71dc9")
+	)
+	(pad "3" thru_hole circle
+		(at 0 -5.08)
+		(size 2 2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "60a64fa7-d098-4bc4-9a35-fa7191d3fbbf")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Potentiometer_THT.3dshapes/Potentiometer_Bourns_3386F_Vertical.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

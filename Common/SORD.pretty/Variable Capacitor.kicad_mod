@@ -1,0 +1,129 @@
+(footprint "Variable Capacitor"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "CVN6500-1")
+	(tags "Capacitor")
+	(property "Reference" "CT1"
+		(at 9.05 0.45 0)
+		(layer "F.SilkS")
+		(uuid "445948ba-87a9-46e9-a483-ff3888aa2d38")
+		(effects
+			(font
+				(size 1.4 1.5)
+				(thickness 0.2)
+			)
+		)
+	)
+	(property "Value" "Trimmer"
+		(at 2.8956 3.95 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "0952d05c-0787-4688-8ad7-554bdf4f3821")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2e9716fc-1d2e-4762-89ef-ab25a1bbdbbc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "~"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "597493ed-fbfa-4b4b-94a1-ce2539c02312")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_arc
+		(start 0.72346 -1.67654)
+		(mid 2.55 -2.433118)
+		(end 4.37654 -1.67654)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fca74cbc-0d23-45d7-a332-dc012a8c9730")
+	)
+	(fp_arc
+		(start 4.667976 1.484215)
+		(mid 2.605284 2.545465)
+		(end 0.538204 1.492788)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "49ff4f16-cf52-417f-8f21-bf5bc5595ad7")
+	)
+	(fp_rect
+		(start -1.45 -2.875)
+		(end 6.45 2.875)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "9afcad21-c322-4635-ab64-78dfb4dd5068")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 2.43 3.95 0)
+		(layer "F.Fab")
+		(uuid "71dd9642-948b-430b-9a95-f8705d7caadb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 2.4 2.4)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "449e31e0-20b2-441a-a06b-327b3fdb0328")
+	)
+	(pad "2" thru_hole circle
+		(at 5.08 0)
+		(size 2.4 2.4)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "fac29996-c9df-42c2-85c3-f75204f67561")
+	)
+	(embedded_fonts no)
+	(model "C:\\Users\\Ian\\Documents\\RS\\SamacSys_Parts.3dshapes\\CVN6500.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

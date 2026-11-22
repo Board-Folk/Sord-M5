@@ -1,0 +1,48 @@
+/* SORD M5 Adress Logic */
+Name       SORD-GA015_MEM;
+Partno     SORD-GA015_MEM;
+Date       05.09.2026;
+Revision   1.1;
+Designer   Jens;
+Company    None;
+Assembly   None;
+Location   IC16;
+Device     P22V10;
+
+/* Inputs */
+pin 1 = STSW;
+pin 2 = MEMRQ;
+
+pin 3 = A15;
+pin 4 = A14;
+pin 5 = A13;
+pin 6 = A12;
+pin 7 = A11;
+pin 8 = RESET;
+pin 9 = D0;
+pin 10 = D1;
+
+/* Outputs */
+pin 23 = ROM0;
+pin 22 = ROM1;
+pin 21 = ROM2;
+pin 20 = RAM0;
+pin 19 = RAM1;
+pin 18 = EXM;
+pin 17 = PSTB;
+pin 16 = RCOM;
+
+/* Equations */
+FIELD MEMADR = [A15..11];
+
+!ROM0 = !MEMRQ & MEMADR:'h'[0000..1FFF];
+!ROM1 = !MEMRQ & MEMADR:'h'[2000..3FFF];
+!ROM2 = !MEMRQ & MEMADR:'h'[4000..5FFF];
+!RAM0 = !MEMRQ & MEMADR:'h'[7000..77FF];
+!RAM1 = !MEMRQ & MEMADR:'h'[7800..7FFF];
+!EXM = !MEMRQ & MEMADR:'h'[8000..FFFF];
+
+!PSTB.D = D0;
+PSTB.AR = !RESET;
+RCOM.D = D1;
+RCOM.AR = !RESET;

@@ -1,0 +1,12 @@
+M5C-02B Change Log
+
+v1b
+
+Remove MADE IN JAPAN (JLC export compliance request)
+
+v1.1
+
+GND zone fix on B by V1
+Add RCA-105 to RCA jack footprint
+/ROM0 resistor modification credit dlabi.cz (R40)
+Clean up SORD logo

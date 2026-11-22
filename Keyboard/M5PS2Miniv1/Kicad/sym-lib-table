@@ -1,0 +1,5 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "SORD") (type "KiCad") (uri "${KIPRJMOD}/../../../Common/SORD.kicad_sym") (options "") (descr ""))
+	(lib (name "SORD_EXTRA") (type "KiCad") (uri "${KIPRJMOD}/../../../Common/SORD_EXTRA.kicad_sym") (options "") (descr ""))
+)

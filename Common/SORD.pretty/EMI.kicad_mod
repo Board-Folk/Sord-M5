@@ -1,0 +1,115 @@
+(footprint "EMI"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=7*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
+	(tags "C Disc series Radial pin pitch 5.00mm  diameter 7mm width 2.5mm Capacitor")
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9c74f66e-d8c1-4273-8e71-798fe48eefd5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "EMI filter, single capacitor"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4ca2f1f7-7c61-4950-b93d-ff9deba7a2f8")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Reference" "EMI417"
+		(at 12.8 1.35 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "e1517ba3-91b2-451f-8be7-a663aab58b9a")
+		(effects
+			(font
+				(size 1.4 1.5)
+				(thickness 0.2)
+			)
+		)
+	)
+	(property "Value" "~"
+		(at 2.5 2.53 0)
+		(layer "F.Fab")
+		(uuid "e97666ca-3fdc-4d47-9104-544b3617d033")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(sheetname "PRINTER_SERIAL")
+	(sheetfile "sheets/PRINTER_SERIAL.kicad_sch")
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1 -1.05)
+		(end 6.05 3.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "75ba651b-9c23-408b-a9b8-709e88213fdf")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 2.5 1.2 0)
+		(layer "F.Fab")
+		(uuid "2bccc209-bc57-404a-a0c3-ee6525b1649b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.6 1.6)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6d311dcb-c53a-4853-bdb5-94bd41e10b3a")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 2.54)
+		(size 1.6 1.6)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "aa7e7cc4-b49f-4843-9cbe-d4bc98c20b2d")
+	)
+	(pad "3" thru_hole circle
+		(at 5.08 0)
+		(size 1.6 1.6)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6437cfac-27e1-4954-8024-e5f41a95225e")
+	)
+	(embedded_fonts no)
+	(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D7.0mm_W2.5mm_P5.00mm.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

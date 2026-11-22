@@ -1,0 +1,206 @@
+(footprint "R_Axial_10.16mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=7.62mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
+	(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 7.62mm 0.167W length 3.6mm diameter 1.6mm")
+	(property "Reference" "REF**"
+		(at 4.2 2.5 0)
+		(layer "F.SilkS")
+		(uuid "76480fd8-4275-442c-87ef-84d9496eb138")
+		(effects
+			(font
+				(size 1.4 1.5)
+				(thickness 0.2)
+			)
+		)
+	)
+	(property "Value" "R_Axial_10.16mm"
+		(at 4.95 -2.05 0)
+		(layer "F.Fab")
+		(uuid "49c9e607-b5d5-4600-8159-3c4c58c99518")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0cdb3b9c-b96e-4a36-b0a2-9b98761da43b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "226ed299-64b1-4793-ba99-2bb7f4c9d6ef")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "resistor/THT"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ed354e77-b267-4ab7-aa07-3cfbc8b30701")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start 1.3 -0.035499)
+		(end 3.65 -0.035499)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "750351bf-66e0-42af-889d-2811888c6a77")
+	)
+	(fp_line
+		(start 3.65 -0.035499)
+		(end 3.89014 0.535499)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "024aad28-79b6-427d-a815-13365588dd90")
+	)
+	(fp_line
+		(start 3.89014 0.535499)
+		(end 4.462067 -0.507425)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0a938a1e-caf7-48c9-b81f-6ef1e27e6a45")
+	)
+	(fp_line
+		(start 4.462067 -0.507425)
+		(end 4.966708 0.625213)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0e23d20b-0b9f-4bcc-b440-182074d8e0cf")
+	)
+	(fp_line
+		(start 4.966708 0.625213)
+		(end 5.370421 -0.541068)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b3b852be-f2be-49df-b18a-6775507a4152")
+	)
+	(fp_line
+		(start 5.370421 -0.541068)
+		(end 5.818991 0.546713)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d9c8b38d-d5f1-44b8-840a-b0ecee700c93")
+	)
+	(fp_line
+		(start 5.818991 0.546713)
+		(end 6.312419 -0.574711)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5acf1efe-a5df-4b54-a097-85abf930127d")
+	)
+	(fp_line
+		(start 6.312419 -0.574711)
+		(end 6.603989 -0.002785)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bc32cda7-f8c9-4f0d-b971-a4b47e486436")
+	)
+	(fp_line
+		(start 6.603989 -0.002785)
+		(end 8.801982 0.008429)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1c556b63-a220-4c4d-bc1d-5245d3ef3b78")
+	)
+	(fp_rect
+		(start -0.95 -1.05)
+		(end 11.05 1.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "56d1e60b-dcaf-4d3f-b956-47075606cca1")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 5.05 0 0)
+		(layer "F.Fab")
+		(uuid "0e0dfe0b-ec69-4659-afb3-593336897c08")
+		(effects
+			(font
+				(size 0.72 0.72)
+				(thickness 0.108)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.4 1.4)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "eb8d0e23-bb03-4c6a-9a8b-caac5522a375")
+	)
+	(pad "2" thru_hole circle
+		(at 10.16 0)
+		(size 1.4 1.4)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "fc6b3149-56fe-490b-8644-c2f5fcc0fc17")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

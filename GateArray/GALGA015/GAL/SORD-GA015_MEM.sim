@@ -1,0 +1,80 @@
+%SIGNAL
+PIN   7 =  A11 
+PIN   6 =  A12 
+PIN   5 =  A13 
+PIN   4 =  A14 
+PIN   3 =  A15 
+PIN   9 =  D0 
+PIN  10 =  D1 
+PIN  18 =  EXM 
+PIN   2 =  MEMRQ 
+PIN  17 =  PSTB 
+PIN  20 =  RAM0 
+PIN  19 =  RAM1 
+PIN  16 =  RCOM 
+PIN   8 =  RESET 
+PIN  23 =  ROM0 
+PIN  22 =  ROM1 
+PIN  21 =  ROM2 
+PIN   1 =  STSW 
+%END
+
+%FIELD
+FIELD MEMADR = A15,A14,A13,A12,A11
+%END
+
+%EQUATION
+!EXM =>
+    A15 & !MEMRQ
+
+!PSTB.d  =>
+    D0
+
+PSTB.ar RCOM.ar  =>
+    !RESET
+
+!RAM0 =>
+    !A11 & A12 & A13 & A14 & !A15 & !MEMRQ
+
+!RAM1 =>
+    A11 & A12 & A13 & A14 & !A15 & !MEMRQ
+
+!RCOM.d  =>
+    !D1
+
+RCOM.ar  =>
+    
+!ROM0 =>
+    !A13 & !A14 & !A15 & !MEMRQ
+
+!ROM1 =>
+    A13 & !A14 & !A15 & !MEMRQ
+
+!ROM2 =>
+    !A13 & A14 & !A15 & !MEMRQ
+
+EXM.oe  =>
+    1 
+
+PSTB.oe  =>
+    1 
+
+RAM0.oe  =>
+    1 
+
+RAM1.oe  =>
+    1 
+
+RCOM.oe  =>
+    1 
+
+ROM0.oe  =>
+    1 
+
+ROM1.oe  =>
+    1 
+
+ROM2.oe  =>
+    1 
+
+%END

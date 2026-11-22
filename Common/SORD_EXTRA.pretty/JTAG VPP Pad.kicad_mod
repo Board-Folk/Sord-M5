@@ -1,0 +1,79 @@
+(footprint "JTAG VPP Pad"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 1.05 -3.3 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "387b8255-e7b0-4f42-a0d1-11f1ee69602b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "JTAG VPP Pad"
+		(at -2.15 0 90)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "d79ba289-a0da-4632-830d-033e59768410")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9165bfb4-a5e0-4dfc-aab8-2220e4fa2d8c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0f9d8187-65b1-4a6d-8337-f88316a4dac7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr board_only exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_text user "${REFERENCE}"
+		(at 0.05 -0.15 90)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "90b62af6-9118-4889-8b76-a9ff5fa01f92")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 0 0)
+		(size 2.5 5)
+		(layers "B.Cu" "B.Mask")
+		(roundrect_rratio 0.15)
+		(uuid "530fe1ac-c5d8-4788-a215-e063c9b6d073")
+	)
+	(embedded_fonts no)
+)

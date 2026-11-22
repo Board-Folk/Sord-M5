@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "SORD") (type "KiCad") (uri "${KIPRJMOD}/../../../Common/SORD.pretty") (options "") (descr ""))
+)

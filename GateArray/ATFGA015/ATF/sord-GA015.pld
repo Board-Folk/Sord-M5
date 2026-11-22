@@ -1,0 +1,99 @@
+/* SORD M5 Adress Logic */
+Name       SORD-GA015
+Partno     SORD-GA015;
+Date       05.09.2026;
+Revision   1.1;
+Designer   Jens;
+Company    None;
+Assembly   None;
+Location   IC16;
+Device     F1502TQFP44;
+
+/* Inputs */
+pin 20 = MEMRQ;
+pin 21 = IORQ;
+pin 25 = RD;
+pin 26 = WR;
+pin 39 = RESET; // GCLR
+
+pin 6 = A15;
+pin 5 = A14;
+pin 3 = A13;
+pin 2 = A12;
+pin 1 = A11;
+
+pin 42 = A7;
+pin 35 = A6;
+pin 7 = A5;
+pin 8 = A4;
+
+pin 19 = D1;
+pin 18 = D0;
+
+/* Outputs */
+pin 15 = ROM0;
+pin 27 = ROM1;
+pin 14 = ROM2;
+pin 22 = RAM0;
+pin 23 = RAM1;
+pin 28 = EXM;
+
+pin 12 = CTC;
+pin 11 = CSR;
+pin 10 = CSW;
+pin 31 = SGC;
+
+pin 32 = KB;
+pin 33 = PDT;
+pin 34 = STS;
+
+pin 13 = EXIOA;
+pin 30 = EXIOB;
+
+pin 43 = PSTB;
+pin 44 = RCOM;
+
+/*
+pin 43 = MRD;
+pin 44 = MWR;
+pin 45 = IORD;
+pin 46 = IOWR;
+*/
+
+/* Equations */
+FIELD MEMADR = [A15..11];
+FIELD IOADR = [A7..4];
+
+!ROM0 = !MEMRQ & MEMADR:'h'[0000..1FFF];
+!ROM1 = !MEMRQ & MEMADR:'h'[2000..3FFF];
+!ROM2 = !MEMRQ & MEMADR:'h'[4000..5FFF];
+!RAM0 = !MEMRQ & MEMADR:'h'[7000..77FF];
+!RAM1 = !MEMRQ & MEMADR:'h'[7800..7FFF];
+!EXM = !MEMRQ & MEMADR:'h'[8000..FFFF];
+
+!CTC = !IORQ & IOADR:'h'00;
+!CSR = !IORQ & IOADR:'h'10 & !RD;
+!CSW = !IORQ & IOADR:'h'10 & !WR;
+!SGC = !IORQ & IOADR:'h'20 & !WR;
+
+!KB = !IORQ & IOADR:'h'30 & !RD;
+!PDT = !IORQ & IOADR:'h'40 & !WR;
+!STS = !IORQ & IOADR:'h'50 & !RD;
+
+!EXIOA = !IORQ & IOADR:'h'60;
+!EXIOB = !IORQ & IOADR:'h'70;
+
+!STSW = !IORQ & IOADR:'h'50 & !WR;
+PSTB.CK = !STSW;
+!PSTB.D = D0;
+PTSB.AR = !RESET;
+RCOM.CK = !STSW;
+RCOM.D = D1;
+RCOM.AR = !RESET;
+
+/*
+!MRD = !MEMRQ & !RD;
+!MWR = !MEMRQ & !WR;
+!IORD = !IORQ & !RD;
+!IOWR = !IORQ & !WR;
+*/

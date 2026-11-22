@@ -1,0 +1,166 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "bdd24551-3473-4ed7-9ed1-fd8a4c536294")
+	(paper "A4")
+	(lib_symbols)
+	(bus
+		(pts
+			(xy 82.55 46.99) (xy 95.25 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36990ec8-3949-48c4-ab83-b8b87da79846")
+	)
+	(bus
+		(pts
+			(xy 82.55 41.91) (xy 95.25 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c0d076b-3c4a-4378-afec-2c9709614866")
+	)
+	(sheet
+		(at 95.25 31.75)
+		(size 44.45 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "782c8cda-14f5-4c98-84bc-eb3fb432ce34")
+		(property "Sheetname" "Gate Array Header"
+			(at 95.25 31.0384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "m5_gatearray.kicad_sch"
+			(at 95.25 64.0846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "A[0..15]" input
+			(at 95.25 41.91 180)
+			(uuid "a2fcafa5-163d-4351-afd7-f9de7c8d0787")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D[0..7]" input
+			(at 95.25 46.99 180)
+			(uuid "da0dd8d1-f9fd-495a-a133-c565a49a2604")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "GALGA015"
+				(path "/bdd24551-3473-4ed7-9ed1-fd8a4c536294"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 38.1 31.75)
+		(size 44.45 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b1e8bb8d-d68e-40d2-a9a4-3464ab9bb2da")
+		(property "Sheetname" "GAL Gate Array"
+			(at 38.1 31.0384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "m5_galgatearray.kicad_sch"
+			(at 38.1 64.0846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "A[0..15]" input
+			(at 82.55 41.91 0)
+			(uuid "062e48b3-c0e5-4c64-a6a8-f0bd87a35df7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "D[0..7]" input
+			(at 82.55 46.99 0)
+			(uuid "7a734e6b-9c45-4c61-85f4-fa37e0a5d539")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "GALGA015"
+				(path "/bdd24551-3473-4ed7-9ed1-fd8a4c536294"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

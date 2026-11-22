@@ -1,0 +1,49 @@
+/* SORD M5 Adress Logic */
+Name       SORD-GA015_IO;
+Partno     SORD-GA015_IO;
+Date       27.08.2026;
+Revision   1;
+Designer   Jens;
+Company    None;
+Assembly   None;
+Location   IC16;
+Device     P22V10;
+
+/* Inputs */
+pin 2 = IORQ;
+pin 3 = RD;
+pin 4 = WR;
+
+pin 5 = A7;
+pin 6 = A6;
+pin 7 = A5;
+pin 8 = A4;
+
+/* Outputs */
+pin 23 = CSW;
+pin 22 = CSR;
+pin 21 = CTC;
+pin 20 = STS;
+pin 19 = PDT;
+pin 18 = KB;
+pin 17 = SGC;
+pin 16 = EXIOA;
+pin 15 = EXIOB;
+pin 14 = STSW;
+
+/* Equations */
+FIELD IOADR = [A7..4];
+
+!CTC = !IORQ & IOADR:'h'00;
+!CSR = !IORQ & IOADR:'h'10 & !RD;
+!CSW = !IORQ & IOADR:'h'10 & !WR;
+!SGC = !IORQ & IOADR:'h'20 & !WR;
+
+!KB = !IORQ & IOADR:'h'30 & !RD;
+!PDT = !IORQ & IOADR:'h'40 & !WR;
+!STS = !IORQ & IOADR:'h'50 & !RD;
+
+!EXIOA = !IORQ & IOADR:'h'60;
+!EXIOB = !IORQ & IOADR:'h'70;
+
+!STSW = !IORQ & IOADR:'h'50 & !WR;
